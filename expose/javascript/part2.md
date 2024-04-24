@@ -1,4 +1,5 @@
-#Part 2
+#  Part 2
+
 **1. What will happen at line 12 and why? If the code causes an error, explain why.**
 > Line 12 will print "3" because in the for loop on line 6, the variable `i` is declared with the `var` declaration. The for loop stops at the length of the `prices` array. Because `i` is a `var` variable, it can be used outside of the scope of the for loop. Line 19 executes `discountPrices([100,200,300],0.5);` so the `prices` array has a length of 3. The for loop stops at this length, meaning `i == 3` at the point of termination. Thus, line 12 prints "3".
 
